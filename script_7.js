@@ -1,6 +1,6 @@
 var phrase = prompt("quel est la phrase");
 function bot(phrase){
-  console.log(phrase.length)
+  
   var fornite =fortnite(phrase);
   var point_interrogation = phrase[phrase.length -1];
   if (point_interrogation=="?"){
