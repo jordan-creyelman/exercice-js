@@ -54,3 +54,19 @@ function books_moins(rented){
 books_moins(rented);
 
 console.log(books.find(book => book.id === 873495));
+console.log("\nSupprime le livre avec l'ID: 133712\n");
+console.log("Suppression de :")
+console.log(books.find(book => book.id == 133712));
+for (let i in books) {
+if (books[i].id === 133712) {
+  books.splice(i, 1);
+}
+}
+
+//Trie les livres par ordre alphabétique (sans celui avec l'ID 133712 car il est supprimé)
+console.log("\nTrie les livres par ordre alphabétique (sans celui avec l'ID 133712 car il est supprimé)\n\n");
+books.sort(function (a , b) 
+{
+  return a.title.localeCompare(b.title);
+})
+console.log(books);
