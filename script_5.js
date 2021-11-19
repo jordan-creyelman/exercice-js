@@ -28,8 +28,8 @@ function books_rented(rented){
 books_rented(rented);
 
 function books_plus(rented){
-  var lue=0
-  var books = ""
+  var lue=0;
+  var books = "";
   for (i = 0; i < rented.length; i++)
   {
       if (rented[i]>lue){
@@ -43,7 +43,7 @@ function books_plus(rented){
 books_plus(rented);
 function books_moins(rented){
  var books=title[i];
- var lue=rented[0]
+ var lue=rented[0];
   for (i = 1; i < rented.length; i++)
   {
       if (rented[i]<lue){
