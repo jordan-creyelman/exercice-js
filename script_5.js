@@ -51,7 +51,7 @@ function books_moins(rented){
         books=title[i];
       }
   }
-  console.log(book,lue);
+  console.log(books,lue);
   
 }
 
