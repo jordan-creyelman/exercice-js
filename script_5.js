@@ -14,8 +14,8 @@ const books = [
   { title: 'Guerre et Paix', id: 748147, rented: 19 }
 ];
 
-rented = books.map(books=>books.rented);
-
+var rented = books.map(books=>books.rented);
+ var title = books.map(books=>books.title)
 function books_rented(rented){
   for (i = 0; i < rented.length; i++)
   {
@@ -28,27 +28,31 @@ function books_rented(rented){
 books_rented(rented);
 
 function books_plus(rented){
-  lue=0
+  var lue=0
+  var books = ""
   for (i = 0; i < rented.length; i++)
   {
       if (rented[i]>lue){
         lue = rented[i];
+        books=title[i];
       }
   }
-  console.log(lue);
+  console.log(books,lue)
 }
 
 books_plus(rented);
 function books_moins(rented){
-
-  lue=rented[0]
+ var books=title[i];
+ var lue=rented[0]
   for (i = 1; i < rented.length; i++)
   {
       if (rented[i]<lue){
         lue = rented[i];
+        books=title[i];
       }
   }
-  console.log(lue);
+  console.log(book,lue);
+  
 }
 
 books_moins(rented);
