@@ -27,7 +27,7 @@ function fortnite(phrase){
   var i = 0;
   var fornite=false;
   while (i<array.length){
-    if (array[i]=="Fornite"){
+    if (array[i]=="Fortnite"){
       fornite=true
     }
     i+=1
